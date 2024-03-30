@@ -483,7 +483,7 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("/assets/img/hero-img.jpg") top center;
+  background: url("/assets/img//home/hero-img.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
