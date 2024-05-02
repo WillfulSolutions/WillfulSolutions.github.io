@@ -98,7 +98,7 @@ section {
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(27, 47, 69, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   inset: 0;
 }
@@ -686,16 +686,20 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about{
+    background-color: #000;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 36px;
   font-family: var(--font-secondary);
-  color: var(--color-secondary);
+  color: #d0ad50;
 }
 
 .about .content p {
   margin: 30px 0;
-  color: #29486a;
+  color: #DBC078;
 }
 
 .about .content ul {
@@ -708,6 +712,7 @@ section {
   position: relative;
   font-size: 15px;
   font-weight: 600;
+  color: #e6d3a0;
 }
 
 .about .content ul i {
@@ -976,9 +981,13 @@ section {
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+.team {
+  background-color: #0a0a0a;
+}
+
 .team .team-member {
   overflow: hidden;
-  background: #fff;
+  background: #0a0a0a;
 }
 
 .team .team-member .member-img {
@@ -999,7 +1008,7 @@ section {
   height: 40px;
   opacity: 0;
   transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(35, 35, 35, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1007,7 +1016,7 @@ section {
 
 .team .team-member .social a {
   transition: color 0.3s;
-  color: #31547c;
+  color: #d0ad50;
   margin: 0 10px;
   display: inline-flex;
   align-items: center;
@@ -1019,7 +1028,7 @@ section {
 }
 
 .team .team-member .social a:hover {
-  color: var(--color-primary);
+  color: #e6d3a0;
 }
 
 .team .team-member .social i {
@@ -1036,14 +1045,14 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: var(--color-secondary);
+  color: #d0ad50;
 }
 
 .team .team-member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #6c757d;
+  color: #DBC078;
 }
 
 .team .team-member .member-info p {
