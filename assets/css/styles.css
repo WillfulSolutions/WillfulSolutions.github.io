@@ -8,8 +8,8 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #56b8e6;
-  --color-secondary: #1b2f45;
+  --color-primary: #9b8e46;
+  --color-secondary: #000;
 }
 
 /* Smooth scroll behavior */
@@ -64,6 +64,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #fff;
 }
 
 .section-header h2:after {
@@ -233,12 +234,12 @@ section {
 }
 
 .header.sticked {
-  background: rgba(27, 47, 69, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   padding: 12px 0;
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 6.5vw;
   margin-right: 6px;
 }
 
@@ -295,7 +296,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #9b8e46;
   }
 
   .navbar .dropdown ul {
@@ -308,7 +309,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.2s;
   }
@@ -321,7 +322,7 @@ section {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--color-secondary);
+    color: #fff;
   }
 
   .navbar .dropdown ul a i {
@@ -486,7 +487,7 @@ section {
   background: url("/assets/img/home/hero-img.jpg") top center;
   background-size: cover;
   position: relative;
-  padding: 140px 0;
+  padding: 180px 0;
   z-index: 3;
 }
 
@@ -600,6 +601,7 @@ section {
 --------------------------------------------------------------*/
 .why-us {
   padding-bottom: 0;
+  background-color: #000;
 }
 
 .why-us .img-bg {
@@ -608,20 +610,24 @@ section {
 }
 
 .why-us .slides {
-  background-color: #f7f9fc;
+  background-color: #232323;
 }
 
 .why-us h3 {
   font-size: 24px;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: #d0ad50;
 }
 
 .why-us h4 {
   font-size: 18px;
   font-weight: 400;
-  color: #29486a;
+  color: #DBC078;
   font-family: var(--font-secondary);
+}
+
+.why-us p{
+    color: #e6d3a0;
 }
 
 .why-us .swiper {
@@ -715,6 +721,10 @@ section {
 /*--------------------------------------------------------------
 # Services List Section
 --------------------------------------------------------------*/
+.services-list {
+  background-color: #000;
+}
+
 .services-list .service-item {
   position: relative;
 }
@@ -733,7 +743,7 @@ section {
 }
 
 .services-list .service-item .title a {
-  color: var(--color-secondary);
+  color:   color: #DBC078;
 }
 
 .services-list .service-item .title a:hover {
@@ -743,6 +753,7 @@ section {
 .services-list .service-item .description {
   line-height: 24px;
   font-size: 14px;
+  color: #e6d3a0;
 }
 
 /*--------------------------------------------------------------
