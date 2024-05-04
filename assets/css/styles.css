@@ -1683,11 +1683,19 @@ section {
 }
 
 .blog .blog-details .content p{
-  color: #DBC078;
+  color: #fff;
+}
+
+.blog .blog-details .content p strong{
+  color: var(--color-primary);
 }
 
 .blog .blog-details .content ol{
-  color: #DBC078;
+  color: #fff;
+}
+
+.blog .blog-details .content ol strong{
+  color: var(--color-primary);
 }
 
 .blog .blog-details .content blockquote {
@@ -1743,11 +1751,11 @@ section {
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
-  color: #e6d3a0;
+  color: var(--color-tertiary);
 }
 
 .blog .blog-details .meta-top a {
-  color: #DBC078;
+  color: var(--color-primary);
   font-size: 14px;
   display: inline-block;
   line-height: 1;
@@ -1759,17 +1767,17 @@ section {
 }
 
 .blog .blog-details .meta-bottom i {
-  color: #d0ad50;
+  color: var(--color-secondary);
   display: inline;
 }
 
 .blog .blog-details .meta-bottom a {
-  color: #d0ad50
+  color: var(--color-primary);
   transition: 0.3s;
 }
 
 .blog .blog-details .meta-bottom a:hover {
-  color: #e6d3a0;
+  color: #fff;
 }
 
 .blog .blog-details .meta-bottom .cats {
@@ -1839,7 +1847,7 @@ section {
 
 .blog .post-author p {
   font-style: italic;
-  color: #DBC078;
+  color: #fff;
   margin-bottom: 0;
 }
 
@@ -2026,12 +2034,12 @@ section {
 
 .blog .comments .comment h5 a {
   font-weight: bold;
-  color: #d0ad50
+  color: var(--color-primary);
   transition: 0.3s;
 }
 
 .blog .comments .comment h5 a:hover {
-  color: #e6d3a0;
+  color: #fff;
 }
 
 .blog .comments .comment h5 .reply {
@@ -2053,7 +2061,7 @@ section {
 .blog .comments .comment p {
   display: block;
   font-size: 14px;
-  color: #d0ad50;
+  color: #fff;
   margin-bottom: 5px;
 }
 
