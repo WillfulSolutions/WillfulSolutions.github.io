@@ -1567,9 +1567,11 @@ section {
 
 .blog .posts-list article {
   height: 100%;
-  border: 1px solid #DBC078;
+  border: 1px solid var(--color-bg-tertiary);
   padding-bottom: 30px;
-  m
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .blog .posts-list article+article {
@@ -1589,17 +1591,17 @@ section {
 }
 
 .blog .posts-list .title a {
-  color: #d0ad50;
+  color: var(--color-primary);
   transition: 0.3s;
 }
 
 .blog .posts-list .title a:hover {
-  color: #e6d3a0;
+  color: #fff;
 }
 
 .blog .posts-list .meta-top {
   margin-top: 20px;
-  color: #467ab3;
+  color: var(--color-tertiary);
 }
 
 .blog .posts-list .meta-top ul {
@@ -1619,11 +1621,10 @@ section {
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
-  color: #DBC078;
 }
 
 .blog .posts-list .meta-top a {
-  color: #DBC078;
+  color: var(--color-secondary);
   font-size: 14px;
   display: inline-block;
   line-height: 1;
@@ -1634,7 +1635,7 @@ section {
 }
 
 .blog .posts-list .content p {
-  color: #DBC078;
+  color: #fff;
 }
 
 .blog .posts-list .read-more a {
@@ -1916,7 +1917,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: var(--color-default);
+  color: #fff;
 }
 
 .blog .sidebar .categories ul a span {
@@ -1952,7 +1953,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: var(--color-default);
+  color: #fff;
 }
 
 .blog .sidebar .recent-posts time {
