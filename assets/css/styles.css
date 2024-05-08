@@ -734,7 +734,11 @@ section {
 /*--------------------------------------------------------------
 # Services List Section
 --------------------------------------------------------------*/
-.services-list {
+.page-index #services-list {
+  background-color: #000;
+}
+
+.page-services #services-list {
   background-color: var(--color-bg-secondary);
 }
 

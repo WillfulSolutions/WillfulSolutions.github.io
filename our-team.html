@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Willful Solutions - team</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -26,63 +28,55 @@
 
     <!-- Custom CSS File -->
     <link href="assets/css/styles.css" rel="stylesheet">
-    <style>
-        body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .construction {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #d0ad50;
-    }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #e6d3a0;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 2s linear infinite;
-      margin: 20px auto;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    p {
-      font-size: 18px;
-      color: #DBC078;
-    }
-
-    </style>
 </head>
-<body>
 
-<div id="navbar" class="navbar"></div>
+<body class="page-team">
 
-<div class="container">
-    <div class="construction">
-        <h1>Under Construction</h1>
-        <div class="loader"></div>
-        <p>We're currently working on something awesome. Stay tuned!</p>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center">
+             <img src="assets/img/logo.png" alt="">
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <div id="navbar" class="navbar">
+        </div><!-- .navbar -->
+
     </div>
-</div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/team/team-header.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+            <h2>Team</h2>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li>Team</li>
+            </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Team Section ======= -->
+    <div id="team" class="team">
+    </div><!-- End Team Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+</footer><!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
 
 <!-- Vendor JS Files -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -93,7 +87,10 @@
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="/assets/js/glightbox.min.js"></script>
 
+
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

@@ -193,4 +193,57 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+
+  // Load the navbar
+fetch('/utilities/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        // Insert the navbar HTML into each page
+        document.getElementById('navbar').innerHTML = data;
+
+        // Get the current page name
+        const pageName = window.location.pathname.split('/').pop().split('.')[0];
+
+        // Get all navbar links
+        const navbarLinks = document.querySelectorAll('#navbar ul li a');
+
+        // Loop through each link
+        navbarLinks.forEach(link => {
+            // Get the link's href attribute
+            const linkHref = link.getAttribute('href').split('.')[0];
+
+            // If the link's href matches the current page name, add the 'active' class
+            if (linkHref === pageName) {
+                link.classList.add('active');
+            }
+        });
+    })
+    .catch(error => console.error(error));
+
+    // Load the footer
+    fetch('/utilities/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data)
+        .catch(error => console.error(error));
+
+    // Define a function to load a section
+    function loadSection(sectionId, sectionPath) {
+        // Get the element
+        const element = document.getElementById(sectionId);
+
+        // If the element exists, fetch the section HTML and insert it
+        if (element) {
+            fetch(sectionPath)
+                .then(response => response.text())
+                .then(data => element.innerHTML = data)
+                .catch(error => console.error(error));
+        }
+    }
+
+    // Use the function to load the sections
+    loadSection('call-to-action', '/utilities/call-to-action.html');
+    loadSection('team', '/utilities/team.html');
+    loadSection('why-us', '/utilities/why-choose-us.html');
+    loadSection('services-list', '/utilities/services-list.html');
+
 });
