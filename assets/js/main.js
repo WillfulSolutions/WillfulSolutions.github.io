@@ -194,6 +194,36 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+// Function to set the active link
+function setActiveLink() {
+    // Get the current page name
+    let pageName = window.location.pathname.split('/').pop().split('.')[0];
+
+    // If the pageName is an empty string, set it to 'index'
+    if (pageName === '') {
+        pageName = 'index';
+    }
+
+    // If the pageName starts with 'blog-details', set it to 'blog'
+    if (pageName.startsWith('blog-details')) {
+        pageName = 'blog';
+    }
+
+    // Get all navbar links
+    const navbarLinks = document.querySelectorAll('#navbar nav ul li a');
+
+    // Loop through each link
+    navbarLinks.forEach(link => {
+        // Get the link's href attribute, remove the leading slash, the '..' and the .html extension
+        const linkHref = link.getAttribute('href').replace(new RegExp('^\\/'), '').replace('../', '').split('.')[0];
+
+        // If the link's href matches the current page name, add the 'active' class
+        if (linkHref === pageName) {
+            link.classList.add('active');
+        }
+    });
+}
+
 // Load the navbar
 fetch('/utilities/navbar.html')
     .then(response => response.text())
@@ -201,32 +231,8 @@ fetch('/utilities/navbar.html')
         // Insert the navbar HTML into each page
         document.getElementById('navbar').innerHTML = data;
 
-        // Get the current page name
-        let pageName = window.location.pathname.split('/').pop().split('.')[0];
-
-        // If the pageName is an empty string, set it to 'index'
-        if (pageName === '') {
-            pageName = 'index';
-        }
-
-        // If the pageName starts with 'blog-details', set it to 'blog'
-        if (pageName.startsWith('blog-details')) {
-            pageName = 'blog';
-        }
-
-        // Get all navbar links
-        const navbarLinks = document.querySelectorAll('#navbar ul li a');
-
-        // Loop through each link
-        navbarLinks.forEach(link => {
-            // Get the link's href attribute, remove the leading slash and the .html extension
-            const linkHref = link.getAttribute('href').replace(/^\//, '').split('.')[0];
-
-            // If the link's href matches the current page name, add the 'active' class
-            if (linkHref === pageName) {
-                link.classList.add('active');
-            }
-        });
+        // Call the function to set the active link
+        setActiveLink();
     })
     .catch(error => console.error(error));
 
