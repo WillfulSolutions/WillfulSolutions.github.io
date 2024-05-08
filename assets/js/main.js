@@ -219,8 +219,8 @@ fetch('/utilities/navbar.html')
 
         // Loop through each link
         navbarLinks.forEach(link => {
-            // Get the link's href attribute
-            const linkHref = link.getAttribute('href').split('.')[0];
+            // Get the link's href attribute, remove the leading slash and the .html extension
+            const linkHref = link.getAttribute('href').replace(/^\//, '').split('.')[0];
 
             // If the link's href matches the current page name, add the 'active' class
             if (linkHref === pageName) {
