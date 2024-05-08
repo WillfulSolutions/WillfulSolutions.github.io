@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // Load the navbar
+// Load the navbar
 fetch('/utilities/navbar.html')
     .then(response => response.text())
     .then(data => {
@@ -202,7 +202,17 @@ fetch('/utilities/navbar.html')
         document.getElementById('navbar').innerHTML = data;
 
         // Get the current page name
-        const pageName = window.location.pathname.split('/').pop().split('.')[0];
+        let pageName = window.location.pathname.split('/').pop().split('.')[0];
+
+        // If the pageName is an empty string, set it to 'index'
+        if (pageName === '') {
+            pageName = 'index';
+        }
+
+        // If the pageName starts with 'blog-details', set it to 'blog'
+        if (pageName.startsWith('blog-details')) {
+            pageName = 'blog';
+        }
 
         // Get all navbar links
         const navbarLinks = document.querySelectorAll('#navbar ul li a');
@@ -219,6 +229,7 @@ fetch('/utilities/navbar.html')
         });
     })
     .catch(error => console.error(error));
+
 
     // Load the footer
     fetch('/utilities/footer.html')
