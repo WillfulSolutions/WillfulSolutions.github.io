@@ -110,7 +110,7 @@
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                             <h4>Email:</h4>
-                            <p>contact@willfulsolutions.co.uk</p>
+                            <p>info@willfulsolutions.co.uk</p>
                         </div>
                     </div><!-- End Info Item -->
 
@@ -126,7 +126,7 @@
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
 
-                    <form action="/assets/forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form id="contact-form" method="post" role="form" class="php-email-form">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -242,6 +242,38 @@
 
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<script>
+    // Get the name from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    let name = urlParams.get('name');
+
+    // Check if the name parameter exists
+    if (name) {
+        // Autofill the subject line with the talent name
+        document.getElementById('subject').value = name.replace(/-/g, ' ');
+        // If the name contains an underscore, replace it with a space
+        if (name.includes('_')) {
+            name = name.replace(/_/g, ' ');
+        }
+    }
+
+    // Handle the form submission
+    document.getElementById('submit-btn').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // Get the form data
+        const formData = new FormData(document.getElementById('contact-form'));
+
+        // Create the email
+        const email = `mailto:hello@fhmproductions.co.uk?subject=${encodeURIComponent(formData.get('subject'))}&body=${encodeURIComponent(formData.get('name'))}:
+        ${encodeURIComponent(formData.get('message'))}`;
+
+        // Open the email in the default email client
+        window.location.href = email;
+    });
+</script>
+
 
 </body>
 
