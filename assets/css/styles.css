@@ -612,12 +612,12 @@ section {
   background-color: #0a0a0a;
 }
 
-.why-us .img-bg {
+.why-us .img-bg, .innovation-section .img-bg, .growth-section .img-bg, .satisfaction-section .img-bg {
   min-height: 500px;
   background-size: cover;
 }
 
-.why-us .slides {
+.why-us .slides, .innovation-section .slides, .satisfaction-section .slides {
   background-color: #000;
 }
 
@@ -2171,6 +2171,110 @@ section {
 .blog .blog-pagination li:hover a {
   background: #d0ad50;
   color: #000;
+}
+/*--------------------------------------------------------------
+# Technology Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# AI
+--------------------------------------------------------------*/
+.innovation-section .img-bg, .growth-section .img-bg, .satisfaction-section .img-bg {
+  min-height: 500px;
+  background-size: cover;
+    background-position: center;
+}
+
+.innovation-section .slides, .satisfaction-section .slides {
+  background-color: #000;
+}
+
+.growth-section .slides{
+    background-color: #0a0a0a;
+}
+
+.innovation-section h3, .growth-section h3, .satisfaction-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #d0ad50;
+}
+
+.innovation-section h4, .growth-section h4, .satisfaction-section h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #DBC078;
+  font-family: var(--font-primary);
+}
+
+.innovation-section p, .growth-section p, .satisfaction-section p{
+    color: #fff;
+}
+
+.innovation-section .swiper, .growth-section .swiper, .satisfaction-section .swiper {
+  margin: 140px 140px 120px 140px;
+  overflow: hidden;
+}
+
+.innovation-section .swiper-button-prev:after,
+.innovation-section .swiper-button-next:after,
+.growth-section .swiper-button-prev:after,
+.growth-section .swiper-button-next:after,
+.satisfaction-section .swiper-button-prev:after,
+.satisfaction-section .swiper-button-next:after{
+  font-size: 24px;
+  color: var(--color-secondary);
+}
+
+.innovation-section .swiper-button-prev,
+.growth-section .swiper-button-prev,
+.satisfaction-section .swiper-button-prev {
+  left: 80px;
+}
+
+.innovation-section .swiper-button-next,
+.growth-section .swiper-button-next,
+.satisfaction-section .swiper-button-next {
+  right: 80px;
+}
+
+.innovation-section .swiper-pagination,
+.growth-section .swiper-pagination,
+.satisfaction-section .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.innovation-section .swiper-pagination .swiper-pagination-bullet,
+growth-section .swiper-pagination .swiper-pagination-bullet,
+satisfaction-section .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--color-secondary);
+}
+
+.innovation-section .swiper-pagination .swiper-pagination-bullet-active,
+.growth-section .swiper-pagination .swiper-pagination-bullet-active,
+.satisfaction-section .swiper-pagination .swiper-pagination-bullet-active{
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 1200px) {
+  .innovation-section .swiper, .growth-section .swiper, .satisfaction-section .swiper {
+    margin: 60px 60px 40px 60px;
+  }
+
+  .innovation-section .swiper-button-prev, .innovation-section .swiper-button-next,
+  .growth-section .swiper-button-prev, .growth-section .swiper-button-next,
+  .satisfaction-section .swiper-button-prev, .satisfaction-section .swiper-button-next {
+    display: none;
+  }
+
+  .innovation-section .swiper-button-next, .growth-section .swiper-button-next, .satisfaction-section .swiper-button-next {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .innovation-section .swiper, growth-section .swiper, .satisfaction-section .swiper{
+    margin: 40px 40px 20px 40px;
+  }
 }
 
 /*--------------------------------------------------------------
