@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Blockchain</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -20,67 +20,173 @@
     <link href=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css " rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="/assets/css/glightbox.min.css">
 
     <!-- Custom CSS File -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
     <style>
-        body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .construction {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #d0ad50;
-    }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #e6d3a0;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 2s linear infinite;
-      margin: 20px auto;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    p {
-      font-size: 18px;
-      color: #DBC078;
-    }
-
+        .card-bg {
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 0 0 10px;
+        }
     </style>
+
 </head>
-<body>
+<body class="blockchain">
 
-<div id="navbar" class="navbar"></div>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-<div class="container">
-    <div class="construction">
-        <h1>Under Construction</h1>
-        <div class="loader"></div>
-        <p>We're currently working on something awesome. Stay tuned!</p>
+        <a href="/index.html" class="logo d-flex align-items-center">
+            <img src="/assets/img/logo.png" alt="">
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <div id="navbar" class="navbar">
+        </div><!-- .navbar -->
+
     </div>
-</div>
+</header><!-- End Header -->
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/assets/img/blockchain/header.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+            <h2>Blockchain</h2>
+            <ol>
+                <li><a href="/index.html">Home</a></li>
+                <li>Blockchain</li>
+            </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Services Cards Section ======= -->
+    <section id="services-cards" class="services-cards">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/blockchain/supply-chain.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Supply Chain Management</h4>
+                                    <p>Enable transparent and traceable supply chains by recording each transaction in a secure and immutable ledger
+                                        to help your businesses to track the movement of goods, verify authenticity, and reduce fraud.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/blockchain/smart-contract.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Smart Contracts</h4>
+                                    <p>Self-executing contracts with the terms of the agreement written into code.
+                                        Ensure integrity and automation of contracts, reducing the need for intermediaries and streamlining business processes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/blockchain/identity-verification.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Identity Verification</h4>
+                                    <p>Secure and decentralized authentication, eliminating the need for traditional paper-based methods.
+                                        Verify customer identities more efficiently while maintaining privacy and security.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/blockchain/payments.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Payment and Transactions</h4>
+                                    <p>Facilitate faster, more secure, and cost-effective cross-border transactions by eliminating intermediaries and reducing transaction fees.
+                                        Benefit from seamless payments and enhanced financial inclusion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/blockchain/intellectual-property-protection.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Intellectual Property Protection</h4>
+                                    <p>Timestamp digital creations, providing immutable proof of ownership and protecting intellectual property rights.
+                                        Safeguard your innovations and creations from infringement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/blockchain/data-management.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Data Management and Security</h4>
+                                    <p>Decentralized and tamper-proof data storage, ensuring data integrity and security.
+                                        Securely manage sensitive information, such as financial records, while complying with regulations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+            </div>
+
+        </div>
+    </section><!-- End Services Cards Section -->
+</main>
+<footer class="footer" id="footer"></footer>
 
 <!-- Vendor JS Files -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -92,6 +198,6 @@
 <script src="/assets/js/glightbox.min.js"></script>
 
 <!-- Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
