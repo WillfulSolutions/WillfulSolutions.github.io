@@ -51,6 +51,65 @@ h6 {
   font-family: var(--font-primary);
 }
 
+h3{
+    color: var(--color-primary);
+}
+
+h4{
+    color: var(--color-secondary);
+}
+
+p{
+    color: #fff;
+}
+
+.btn {
+  font-family: var(--font-default);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #DBC078;
+  border: 2px solid #DBC078;
+}
+
+.btn:hover {
+  color: #fff;
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content ul li {
+  padding: 0 0 15px 26px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e6d3a0;
+}
+
+.content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--color-primary);
+}
+
+.card-bg {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+}
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -549,25 +608,6 @@ section {
   margin: 40px 0;
 }
 
-.hero .btn-get-started {
-  font-family: var(--font-secondary);
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #DBC078;
-  border: 2px solid #DBC078;
-}
-
-.hero .btn-get-started:hover {
-  border: 2px solid var(--color-primary);
-  background: var(--color-primary);
-  color: #fff;
-}
-
 .hero .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
@@ -710,26 +750,6 @@ section {
   color: #fff;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding: 0 0 15px 26px;
-  position: relative;
-  font-size: 15px;
-  font-weight: 600;
-  color: #e6d3a0;
-}
-
-.about .content ul i {
-  position: absolute;
-  font-size: 20px;
-  left: 0;
-  top: -3px;
-  color: var(--color-primary);
-}
 
 /*--------------------------------------------------------------
 # Services List Section
@@ -804,26 +824,7 @@ section {
   margin-bottom: 25px;
 }
 
-.call-to-action .cta-btn {
-  font-family: var(--font-default);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #DBC078;
-  border: 2px solid #DBC078;
 
-}
-
-.call-to-action .cta-btn:hover {
-  color: #fff;
-  background: var(--color-primary);
-  border: 2px solid var(--color-primary);
-}
 
 /*--------------------------------------------------------------
 # Features Section
@@ -2275,6 +2276,17 @@ satisfaction-section .swiper-pagination .swiper-pagination-bullet {
   .innovation-section .swiper, growth-section .swiper, .satisfaction-section .swiper{
     margin: 40px 40px 20px 40px;
   }
+}
+
+/*--------------------------------------------------------------
+# Cloud
+--------------------------------------------------------------*/
+.cloud-computing-what{
+    background-color: #000;
+}
+
+.cloud-computing-benefits{
+    background-color: #0a0a0a;
 }
 
 /*--------------------------------------------------------------
