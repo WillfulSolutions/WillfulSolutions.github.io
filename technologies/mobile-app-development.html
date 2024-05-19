@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Mobile Apps</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -24,63 +24,287 @@
 
     <!-- Custom CSS File -->
     <link href="/assets/css/styles.css" rel="stylesheet">
+
     <style>
-        body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .construction {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #d0ad50;
-    }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #e6d3a0;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 2s linear infinite;
-      margin: 20px auto;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    p {
-      font-size: 18px;
-      color: #DBC078;
-    }
-
+        .services-cards {
+            background-color: #0a0a0a;
+        }
     </style>
+
 </head>
-<body>
+<body class="data-analytics">
 
-<div id="navbar" class="navbar"></div>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-<div class="container">
-    <div class="construction">
-        <h1>Under Construction</h1>
-        <div class="loader"></div>
-        <p>We're currently working on something awesome. Stay tuned!</p>
+        <a href="/index.html" class="logo d-flex align-items-center">
+            <img src="/assets/img/logo.png" alt="">
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <div id="navbar" class="navbar">
+        </div><!-- .navbar -->
+
     </div>
-</div>
+</header><!-- End Header -->
+
+
+<main id="main" class="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/assets/img/technologies/mobile-apps/header.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+            <h2>Mobile Applications</h2>
+            <ol>
+                <li><a href="/index.html">Home</a></li>
+                <li>Mobile Apps</li>
+            </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= What is Mobile App Development Section ======= -->
+    <section id="what-is-mobile-app-development" class="cloud-computing-benefits">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="/assets/img/technologies/mobile-apps/what-is-mobile.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>What is Mobile Application Development?</h3>
+                    <p>Mobile application development is the process of creating software applications that run on mobile devices.
+                        It involves designing, building, testing, and deploying apps for platforms such as iOS and Android.
+                        Key aspects of mobile app development include user interface design, backend services integration,
+                        and ensuring app performance and security.
+                        By leveraging programming languages and frameworks specific to each platform,
+                        developers create engaging and functional apps that enhance user experiences
+                        and meet business goals.</p>
+                    <a class="btn" href="/contact.html">Find out more</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End What is Mobile App Development Section -->
+
+    <section id="mobile-application-benefits" class="cloud-computing-what">
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="content ps-lg-5">
+                        <h3>Benefits of Mobile Applications</h3>
+                        <p>
+                            Adopting mobile applications brings numerous advantages to businesses across various sectors.
+                            Some benefits include:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Enhanced Customer Engagement</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Increased Accessibility</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Direct Communication Channels</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Improved Brand Loyalty</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Better Customer Insights</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Higher Revenue Potential</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="btn" href="/contact.html">Reap the benefits</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/assets/img/technologies/mobile-apps/benefits.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======= Services Cards Section ======= -->
+    <section id="services-cards" class="services-cards">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Our Mobile Application Solutions</h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/custom-app-development.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Custom App Development</h4>
+                                    <p>Create tailored mobile applications to meet specific business needs, ensuring unique functionality and user experiences.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/e-commerce-solutions.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">E-Commerce Solutions</h4>
+                                    <p>Develop robust e-commerce mobile apps to enhance your online sales, with features like secure payments,
+                                        inventory management, and customer support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/enterprise-mobility.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Enterprise Mobility</h4>
+                                    <p>Enhance business productivity with enterprise mobility solutions,
+                                        enabling secure access to company resources and data on mobile devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/hybrid-app-development.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Hybrid App Development</h4>
+                                    <p>Develop cross-platform mobile applications that run seamlessly on both iOS and Android,
+                                        offering a cost-effective solution for reaching a wider audience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/payment.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Mobile Payment Solutions</h4>
+                                    <p>secure mobile payment systems to facilitate seamless transactions, including digital wallets, in-app purchases, and contactless payments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/location-services.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Location-Based Services</h4>
+                                    <p>Leverage GPS and location data to provide personalised experiences, such as targeted marketing, navigation, and geofencing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/ar.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Augmented Reality (AR)</h4>
+                                    <p>Applications that enhance user engagement and provide innovative experiences for retail, education, gaming, and real estate.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/devops/security.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Mobile App Security</h4>
+                                    <p>Implement robust security measures to protect your mobile applications from threats, ensuring data privacy and regulatory compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/ai.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Chatbots and Virtual Assistants</h4>
+                                    <p>AI-powered chatbots and virtual assistants into mobile apps to provide instant customer support, automate tasks, and enhance user interaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+                <div class="card-item">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div class="card-bg" style="background-image: url(/assets/img/technologies/data-analytics/predictive-analysis.jpg);"></div>
+                        </div>
+                        <div class="col-xl-7 d-flex align-items-center">
+                            <div class="card-body">
+                                <h4 class="card-title">Mobile Analytics</h4>
+                                <p>Robust analytics solutions to track user behaviour, app performance, and key metrics, helping businesses make data-driven decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div><!-- End Card Item -->
+            </div>
+    </section><!-- End Services Cards Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <div id="call-to-action" class="call-to-action">
+    </div><!-- End Call To Action Section -->
+
+</main>
+<footer class="footer" id="footer"></footer>
 
 <!-- Vendor JS Files -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
