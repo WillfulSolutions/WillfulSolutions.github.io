@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>DevOps</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -20,67 +20,257 @@
     <link href=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css " rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="/assets/css/glightbox.min.css">
 
     <!-- Custom CSS File -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
     <style>
-        body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .construction {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #d0ad50;
-    }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #e6d3a0;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 2s linear infinite;
-      margin: 20px auto;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    p {
-      font-size: 18px;
-      color: #DBC078;
-    }
-
+        .services-cards {
+            background-color: #0a0a0a;
+        }
     </style>
+
 </head>
-<body>
+<body class="data-analytics">
 
-<div id="navbar" class="navbar"></div>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-<div class="container">
-    <div class="construction">
-        <h1>Under Construction</h1>
-        <div class="loader"></div>
-        <p>We're currently working on something awesome. Stay tuned!</p>
+        <a href="/index.html" class="logo d-flex align-items-center">
+            <img src="/assets/img/logo.png" alt="">
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <div id="navbar" class="navbar">
+        </div><!-- .navbar -->
+
     </div>
-</div>
+</header><!-- End Header -->
+
+
+<main id="main" class="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/assets/img/devops/header.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+            <h2>Development Operations</h2>
+            <ol>
+                <li><a href="/index.html">Home</a></li>
+                <li>DevOps</li>
+            </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= What is DevOps Section ======= -->
+    <section id="what-is-devops" class="cloud-computing-benefits">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="/assets/img/devops/what-is-devops.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>What is DevOps?</h3>
+                    <p>DevOps is a set of practices that combine software development (Dev) and IT operations (Ops)
+                        to shorten the development lifecycle and deliver high-quality software continuously.
+                        It aims to improve collaboration and productivity by automating infrastructure,
+                        workflows, and continuously measuring application performance.
+                        Key aspects of DevOps include continuous integration, continuous delivery, automated testing, and monitoring.
+                        By fostering a culture of collaboration between development and operations teams,
+                        DevOps helps organisations accelerate delivery, improve reliability, and better respond to customer needs.</p>
+                    <a class="btn" href="/contact.html">Find out more</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End What is Data Analytics Section -->
+
+    <section id="devops-benefits" class="cloud-computing-what">
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="content ps-lg-5">
+                        <h3>Benefits of DevOps</h3>
+                        <p>
+                            Adopting DevOps practices brings numerous advantages to businesses across various sectors.
+                            Some benefits include:
+                        </p>
+                        <div class="row"> <!-- Add this row -->
+                            <div class="col-md-6"> <!-- Adjust this column -->
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Faster Delivery of Features</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Improved Collaboration and Communication</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Enhanced Efficiency through Automation</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6"> <!-- Adjust this column -->
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Greater Reliability and Stability</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Continuous Feedback and Improvement</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Reduced Costs and Increased ROI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="btn" href="/contact.html">Reap the benefits</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/assets/img/devops/benefits.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Services Cards Section ======= -->
+    <section id="services-cards" class="services-cards">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Our DevOps Solutions</h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/devops/continuous-integration.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Continuous Integration</h4>
+                                    <p>Streamline your development process by integrating code changes frequently and automatically testing them to ensure high quality and fast delivery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/devops/continuous-delivery.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Continuous Delivery</h4>
+                                    <p>Automate your software release process to ensure that updates are tested and ready for deployment at any time, increasing reliability and speed to market.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/devops/infrastructure-as-code.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Infrastructure as Code</h4>
+                                    <p>Manage and provision your IT infrastructure through code, enabling consistent and repeatable deployments while reducing manual errors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/devops/monitoring-and-logging.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Monitoring and Logging</h4>
+                                    <p>Gain insights into your application's performance and stability with comprehensive monitoring and logging solutions, allowing for proactive issue resolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/devops/automated-testing.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Automated Testing</h4>
+                                    <p>Ensure code quality and functionality by integrating automated testing into your development pipeline, reducing the risk of bugs and enhancing efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/devops/configuration-management.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Configuration Management</h4>
+                                    <p>Maintain consistency of your system’s performance and functionality by tracking and controlling changes in software configuration and environment settings.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/devops/microservices.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Microservices Architecture</h4>
+                                    <p>Break down your applications into smaller, manageable services that can be developed, deployed, and scaled independently to enhance agility and efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/devops/security.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Security Integration</h4>
+                                    <p>Integrate security practices into your DevOps pipeline to ensure your applications are secure from the start and maintain compliance with industry standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+            </div>
+        </div>
+
+    </section><!-- End Services Cards Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <div id="call-to-action" class="call-to-action">
+    </div><!-- End Call To Action Section -->
+
+</main>
+<footer class="footer" id="footer"></footer>
 
 <!-- Vendor JS Files -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -92,6 +282,6 @@
 <script src="/assets/js/glightbox.min.js"></script>
 
 <!-- Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
