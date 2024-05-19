@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>IoT</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -20,67 +20,271 @@
     <link href=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css " rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="/assets/css/glightbox.min.css">
 
     <!-- Custom CSS File -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
     <style>
-        body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .construction {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #d0ad50;
-    }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #e6d3a0;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 2s linear infinite;
-      margin: 20px auto;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    p {
-      font-size: 18px;
-      color: #DBC078;
-    }
+        .services-cards {
+            background-color: #0a0a0a;
+        }
 
     </style>
+
 </head>
-<body>
+<body class="data-analytics">
 
-<div id="navbar" class="navbar"></div>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-<div class="container">
-    <div class="construction">
-        <h1>Under Construction</h1>
-        <div class="loader"></div>
-        <p>We're currently working on something awesome. Stay tuned!</p>
+        <a href="/index.html" class="logo d-flex align-items-center">
+            <img src="/assets/img/logo.png" alt="">
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <div id="navbar" class="navbar">
+        </div><!-- .navbar -->
+
     </div>
-</div>
+</header><!-- End Header -->
+
+
+<main id="main" class="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/assets/img/iot/header.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+            <h2>Internet of Things</h2>
+            <ol>
+                <li><a href="/index.html">Home</a></li>
+                <li>IoT</li>
+            </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= What is IoT Section ======= -->
+    <section id="what-is-iot" class="cloud-computing-benefits">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="/assets/img/iot/what-is-iot.jpg" class="img-fluid" alt="What is IoT">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>What is the Internet of Things?</h3>
+                    <p>The Internet of Things (IoT) refers to the interconnected network of physical devices embedded with sensors,
+                        software, and other technologies to collect and exchange data over the Internet.
+                        These devices range from everyday household items to sophisticated industrial tools.
+                        IoT enables seamless communication between devices,
+                        providing real-time data and insights that can improve efficiency,
+                        automate processes, and enhance decision-making.
+                        The ultimate goal of IoT is to create a smarter,
+                        more responsive environment where devices work together to improve our daily lives and business operations.</p>
+                    <a class="btn" href="/contact.html">Find out more</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End What is IoT Section -->
+
+
+    <section id="iot-benefits" class="cloud-computing-what">
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="content ps-lg-5">
+                        <h3>Benefits of IoT</h3>
+                        <p>
+                            The Internet of Things (IoT) offers numerous benefits to businesses across various industries.
+                            Some of these benefits include:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Improved Decision-Making</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Enhanced Operational Efficiency</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Real-Time Monitoring</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Predictive Maintenance</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Cost Reduction</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Better Customer Insights</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="btn" href="/contact.html">Reap the benefits</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/assets/img/iot/benefits.jpg" class="img-fluid" alt="Benefits of IoT">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Services Cards Section ======= -->
+    <section id="services-cards" class="services-cards">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Our IoT Solutions</h2>
+            </div>
+            <div class="row gy-4">
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/data-analytics/supply-chain.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Supply Chain Management</h4>
+                                    <p>Use IoT to monitor inventory levels in real-time and automate restocking,
+                                        track and optimise the logistics and transportation of goods,
+                                        monitor the temperature and condition of perishable goods in transit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/data-analytics/customer-service.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Customer Service</h4>
+                                    <p>Improve customer service with IoT by leveraging connected devices to provide instant support,
+                                        collect customer feedback, and personalise interactions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/iot/asset-tracking.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Asset Tracking</h4>
+                                    <p>Use IoT for asset tracking to monitor the location and condition of your assets in real-time,
+                                        reducing losses and improving asset utilisation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/iot/predictive-analysis.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Energy Management</h4>
+                                    <p>Implement IoT-based IoT solutions for managing and optimising the distribution of electricity,
+                                        monitor and control renewable energy sources like solar panels and wind turbines
+                                        and real-time monitoring and optimisation of energy use.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/iot/smart-manufacturing.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Smart Manufacturing</h4>
+                                    <p>Implement IoT sensors to monitor equipment health and predict failures before they occur,
+                                        track the location and usage of manufacturing assets in real-time and
+                                        monitor production processes and ensure consistent product quality.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/iot/retail.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Retail Solutions</h4>
+                                    <p>Enhance your retail operations with IoT by implementing smart shelves, monitoring customer behaviour,
+                                        and optimising inventory management to improve the shopping experience and increase sales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/iot/environmental-monitoring.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Environmental Monitoring</h4>
+                                    <p>Use IoT sensors to monitor air quality in urban areas, track water quality in real-time,
+                                        and deploy IoT-enabled weather stations for accurate and localised weather data.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/ai/risk-automation.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Risk Management</h4>
+                                    <p>Utilise IoT to identify and mitigate potential risks by monitoring real-time data from connected devices,
+                                        predicting future risks through data analysis,
+                                        and implementing automated alerts and responses to prevent incidents.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+            </div>
+        </div>
+    </section><!-- End Services Cards Section -->
+    <!-- ======= Call To Action Section ======= -->
+    <div id="call-to-action" class="call-to-action">
+    </div><!-- End Call To Action Section -->
+
+</main>
+<footer class="footer" id="footer"></footer>
 
 <!-- Vendor JS Files -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -92,6 +296,6 @@
 <script src="/assets/js/glightbox.min.js"></script>
 
 <!-- Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

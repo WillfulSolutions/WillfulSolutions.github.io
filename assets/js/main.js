@@ -209,6 +209,10 @@ function setActiveLink() {
         pageName = 'blog';
     }
 
+    if(pageName.startsWith('technologies')){
+        pageName = 'technologies';
+    }
+
     // Get all navbar links
     const navbarLinks = document.querySelectorAll('#navbar nav ul li a');
 
