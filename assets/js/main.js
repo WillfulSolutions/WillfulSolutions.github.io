@@ -243,7 +243,11 @@ fetch('/utilities/navbar.html')
 
         // Add a click event listener to the dropdown menu
         dropdownMenu.addEventListener('click', function(event) {
-            event.preventDefault();
+            // Check if the event target is a link
+            if (event.target.tagName !== 'A') {
+                // If the event target is not a link, prevent the default action
+                event.preventDefault();
+            }
             // Toggle the 'dropdown-active' class on the dropdown menu
             this.classList.toggle('dropdown-active');
         });
@@ -276,4 +280,6 @@ fetch('/utilities/navbar.html')
     loadSection('team', '/utilities/team.html');
     loadSection('why-us', '/utilities/why-choose-us.html');
     loadSection('services-list', '/utilities/services-list.html');
+
+
 });
