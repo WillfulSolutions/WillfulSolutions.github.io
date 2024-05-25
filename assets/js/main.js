@@ -237,6 +237,16 @@ fetch('/utilities/navbar.html')
 
         // Call the function to set the active link
         setActiveLink();
+
+        // Get the dropdown menu
+        var dropdownMenu = document.querySelector('.navbar .dropdown');
+
+        // Add a click event listener to the dropdown menu
+        dropdownMenu.addEventListener('click', function(event) {
+            event.preventDefault();
+            // Toggle the 'dropdown-active' class on the dropdown menu
+            this.classList.toggle('dropdown-active');
+        });
     })
     .catch(error => console.error(error));
 
@@ -266,5 +276,4 @@ fetch('/utilities/navbar.html')
     loadSection('team', '/utilities/team.html');
     loadSection('why-us', '/utilities/why-choose-us.html');
     loadSection('services-list', '/utilities/services-list.html');
-
 });
