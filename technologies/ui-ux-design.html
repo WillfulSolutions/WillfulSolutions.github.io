@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>UI/UX</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -20,67 +20,268 @@
     <link href=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css " rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="/assets/css/glightbox.min.css">
 
     <!-- Custom CSS File -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
     <style>
-        body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .construction {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #d0ad50;
-    }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #e6d3a0;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 2s linear infinite;
-      margin: 20px auto;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    p {
-      font-size: 18px;
-      color: #DBC078;
-    }
-
+        .services-cards {
+            background-color: #0a0a0a;
+        }
     </style>
+
 </head>
-<body>
+<body class="data-analytics">
 
-<div id="navbar" class="navbar"></div>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-<div class="container">
-    <div class="construction">
-        <h1>Under Construction</h1>
-        <div class="loader"></div>
-        <p>We're currently working on something awesome. Stay tuned!</p>
+        <a href="/index.html" class="logo d-flex align-items-center">
+            <img src="/assets/img/logo.png" alt="">
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <div id="navbar" class="navbar">
+        </div><!-- .navbar -->
+
     </div>
-</div>
+</header><!-- End Header -->
+
+
+<main id="main" class="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/assets/img/technologies/ux/header.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+            <h2>User Experience Design</h2>
+            <ol>
+                <li><a href="/index.html">Home</a></li>
+                <li>UI/UX</li>
+            </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= What is DevOps Section ======= -->
+    <section id="what-is-devops" class="cloud-computing-benefits">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="/assets/img/technologies/ux/what-is-ux.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>What is UX?</h3>
+                    <p>User Experience (UX) refers to the overall experience a person has when interacting with a product, system, or service.
+                        It encompasses all aspects of the end-user's interaction,
+                        including ease of use, accessibility, and the overall satisfaction derived from the interaction.
+                        UX design is the process of creating products that provide meaningful and relevant experiences to users.
+                        This involves research, design, usability testing,
+                        and iteration to ensure that the final product is both functional and enjoyable to use.
+                        Key components of UX design include information architecture,
+                        interaction design, visual design, and user research.
+                        By focusing on the needs and preferences of users,
+                        UX design helps create products that are not only efficient but also delightful to use.</p>
+                    <a class="btn" href="/contact.html">Find out more</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End What is Data Analytics Section -->
+
+    <section id="devops-benefits" class="cloud-computing-what">
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="content ps-lg-5">
+                        <h3>Benefits of UX</h3>
+                        <p>
+                            Investing in User Experience (UX) design offers numerous advantages for businesses across various sectors.
+                            Some benefits include:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Increased User Satisfaction and Loyalty</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Improved Usability and Accessibility</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Enhanced Efficiency and Productivity for Users</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Higher Conversion Rates and Sales</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Continuous Feedback and Iteration</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Reduced Development Costs and Increased ROI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="btn" href="/contact.html">Reap the benefits</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/assets/img/technologies/ux/benefits.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Services Cards Section ======= -->
+    <section id="services-cards" class="services-cards">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Our UX Solutions</h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/information-architecture.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Information Architecture</h4>
+                                    <p>Organize and structure content effectively to ensure users can find what they need easily,
+                                        enhancing the overall user experience and satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/wireframing.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Wireframing and Prototyping</h4>
+                                    <p>Create detailed wireframes and interactive prototypes to visualise and test design concepts,
+                                        ensuring they meet user needs before full-scale development.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/interaction-design.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Interaction Design</h4>
+                                    <p>Design interactive elements that are intuitive and engaging, ensuring that users can navigate and use your product effortlessly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/visual-design.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Visual Design</h4>
+                                    <p>Create visually appealing designs that align with your brand identity and
+                                        enhance the overall user experience through effective use of colour, typography, and imagery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/usability-testing.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Usability Testing</h4>
+                                    <p>Conduct usability tests to gather feedback on your product’s design and functionality,
+                                        identifying areas for improvement to enhance user satisfaction and performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/accessibility.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Accessibility Consulting</h4>
+                                    <p>Ensure your product is accessible to all users, including those with disabilities,
+                                        by following best practices and accessibility standards, making your product inclusive and user-friendly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/content-strategy.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Content Strategy</h4>
+                                    <p>Develop a strategic plan for creating, managing, and delivering content that is relevant and valuable to your users,
+                                        enhancing their overall experience with your product.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/journey-mapping.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">User Journey Mapping</h4>
+                                    <p>Visualize and analyse the end-to-end experience of your users by creating detailed user journey maps.
+                                        Identify pain points, opportunities for improvement,
+                                        and ensure a seamless user experience across all touch-points.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+            </div>
+        </div>
+
+    </section><!-- End Services Cards Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <div id="call-to-action" class="call-to-action">
+    </div><!-- End Call To Action Section -->
+
+</main>
+<footer class="footer" id="footer"></footer>
 
 <!-- Vendor JS Files -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -92,6 +293,6 @@
 <script src="/assets/js/glightbox.min.js"></script>
 
 <!-- Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
