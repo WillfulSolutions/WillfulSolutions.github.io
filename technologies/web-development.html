@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Web Dev</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -20,67 +20,263 @@
     <link href=" https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css " rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="/assets/css/glightbox.min.css">
 
     <!-- Custom CSS File -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
     <style>
-        body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .construction {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #d0ad50;
-    }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #e6d3a0;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 2s linear infinite;
-      margin: 20px auto;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    p {
-      font-size: 18px;
-      color: #DBC078;
-    }
-
+        .services-cards {
+            background-color: #0a0a0a;
+        }
     </style>
+
 </head>
-<body>
+<body class="data-analytics">
 
-<div id="navbar" class="navbar"></div>
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-<div class="container">
-    <div class="construction">
-        <h1>Under Construction</h1>
-        <div class="loader"></div>
-        <p>We're currently working on something awesome. Stay tuned!</p>
+        <a href="/index.html" class="logo d-flex align-items-center">
+            <img src="/assets/img/logo.png" alt="">
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <div id="navbar" class="navbar">
+        </div><!-- .navbar -->
+
     </div>
-</div>
+</header><!-- End Header -->
+
+
+<main id="main" class="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/assets/img/technologies/web-dev/header.jpg');">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+            <h2>Web Development</h2>
+            <ol>
+                <li><a href="/index.html">Home</a></li>
+                <li>Web Development</li>
+            </ol>
+
+        </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= What is DevOps Section ======= -->
+    <section id="what-is-devops" class="cloud-computing-benefits">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="/assets/img/technologies/web-dev/what-is-web-dev.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>What is Web Development?</h3>
+                    <p>Web development is the process of creating, building, and maintaining websites and web applications.
+                        It involves a combination of programming,
+                        design, and content creation to produce functional and visually appealing online experiences.
+                        Key aspects of web development include front-end development,
+                        which focuses on the design and user interface,
+                        and back-end development, which involves server-side logic,
+                        databases, and application functionality.
+                        Web developers use various technologies such as HTML,
+                        CSS, JavaScript, and frameworks like React and Angular to build responsive and dynamic websites.
+                        Effective web development ensures websites are fast,
+                        secure, and user-friendly, providing a seamless experience for visitors.</p>
+                    <a class="btn" href="/contact.html">Find out more</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End What is Data Analytics Section -->
+
+    <section id="devops-benefits" class="cloud-computing-what">
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="content ps-lg-5">
+                        <h3>Benefits of Web Applications</h3>
+                        <p>
+                            Utilizing web applications brings numerous advantages to businesses across various sectors.
+                            Some benefits include:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Accessibility from Anywhere</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Improved Customer Engagement</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Scalability to Meet Growing Demands</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-check-circle-fill"></i> Streamlined Business Processes</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Cost-Effective Development and Maintenance</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Enhanced Security and Data Protection</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="btn" href="/contact.html">Reap the benefits</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/assets/img/technologies/devops/benefits.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Services Cards Section ======= -->
+    <section id="services-cards" class="services-cards">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Our Web Solutions</h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/web-dev/responsive-design.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Responsive Web Design</h4>
+                                    <p>Create websites that offer an optimal viewing experience across a wide range of devices,
+                                        ensuring usability and satisfaction for all users.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/mobile-apps/e-commerce-solutions.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">E-commerce Solutions</h4>
+                                    <p>Develop robust e-commerce platforms that streamline the online shopping experience,
+                                        enhance customer engagement, and drive sales growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/web-dev/web-apps.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Web Application Development</h4>
+                                    <p>Build custom web applications tailored to your business needs, enhancing functionality, efficiency, and user engagement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/content-strategy.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Content Management Systems</h4>
+                                    <p>Implement powerful CMS solutions that allow you to easily create,
+                                        manage, and modify digital content without needing extensive technical knowledge.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/web-dev/seo.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Search Engine Optimization (SEO)</h4>
+                                    <p>Enhance your website’s visibility on search engines through effective SEO strategies,
+                                        driving more organic traffic and improving your online presence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/ux/header.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">UI/UX Design</h4>
+                                    <p>Design intuitive and visually appealing user interfaces that enhance user experience and increase engagement on your web platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/cloud-computing/header.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Cloud Integration</h4>
+                                    <p>Integrate your web applications with cloud services to enhance scalability, performance, and flexibility while reducing infrastructure costs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card-item">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <div class="card-bg" style="background-image: url(/assets/img/technologies/devops/security.jpg);"></div>
+                            </div>
+                            <div class="col-xl-7 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h4 class="card-title">Web Security</h4>
+                                    <p>Implement robust security measures to protect your web applications from cyber threats, ensuring data integrity and compliance with industry standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Card Item -->
+            </div>
+        </div>
+    </section><!-- End Services Cards Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <div id="call-to-action" class="call-to-action">
+    </div><!-- End Call To Action Section -->
+
+</main>
+<footer class="footer" id="footer"></footer>
 
 <!-- Vendor JS Files -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -92,6 +288,6 @@
 <script src="/assets/js/glightbox.min.js"></script>
 
 <!-- Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
